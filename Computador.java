@@ -1,7 +1,6 @@
 /**
 *=========================
-* Producto.java
-* Clase HIJA
+*  Clase HIJA
 *=========================
 */
 package modelo;

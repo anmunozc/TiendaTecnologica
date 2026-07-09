@@ -9,6 +9,10 @@ public class Accesorio extends Producto {
 
     private String tipo;
 
+    public Accesorio() {
+        this("SIN_CODIGO", "SIN_NOMBRE", 0, "NO ESPECIFICADO");
+    }
+
     public Accesorio(String codigo,
                      String nombre,
                      double precio,
@@ -19,7 +23,6 @@ public class Accesorio extends Producto {
 
     }
 
-    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

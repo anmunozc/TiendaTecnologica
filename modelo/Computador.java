@@ -9,6 +9,12 @@ public class Computador extends Producto {
 
     private String procesador;
 
+    // Constructor por defecto
+    public Computador() {
+        this("SIN_CODIGO", "SIN_NOMBRE", 0, "NO ESPECIFICADO");
+    }
+
+    // Constructor parametrizado
     public Computador(String codigo,
                       String nombre,
                       double precio,
@@ -19,7 +25,6 @@ public class Computador extends Producto {
 
     }
 
-    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

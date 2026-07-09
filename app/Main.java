@@ -3,7 +3,6 @@
 *  Clase PRINCIPAL
 *=========================
 */
-
 package app;
 
 import modelo.Accesorio;
@@ -13,6 +12,16 @@ import modelo.Telefono;
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("===== Constructor por defecto =====");
+
+        Computador computador1 = new Computador();
+
+        computador1.mostrarInformacion();
+
+        System.out.println();
+
+        System.out.println("===== Constructores parametrizados =====");
 
         Computador computador =
                 new Computador(

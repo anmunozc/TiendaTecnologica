@@ -9,6 +9,10 @@ public class Telefono extends Producto {
 
     private String sistemaOperativo;
 
+    public Telefono() {
+        this("SIN_CODIGO", "SIN_NOMBRE", 0, "NO ESPECIFICADO");
+    }
+
     public Telefono(String codigo,
                     String nombre,
                     double precio,
@@ -19,7 +23,6 @@ public class Telefono extends Producto {
 
     }
 
-    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

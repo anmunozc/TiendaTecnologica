@@ -7,52 +7,42 @@ package app;
 
 import modelo.Accesorio;
 import modelo.Computador;
+import modelo.Producto;
 import modelo.Telefono;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("===== Constructor por defecto =====");
+        Producto producto;
 
-        Computador computador1 = new Computador();
+        producto = new Computador(
+                "PC001",
+                "Notebook Lenovo",
+                899990,
+                "Intel Core i7");
 
-        computador1.mostrarInformacion();
-
-        System.out.println();
-
-        System.out.println("===== Constructores parametrizados =====");
-
-        Computador computador =
-                new Computador(
-                        "PC001",
-                        "Notebook Lenovo",
-                        899990,
-                        "Intel Core i7");
-
-        Telefono telefono =
-                new Telefono(
-                        "TEL001",
-                        "Samsung Galaxy S24",
-                        799990,
-                        "Android");
-
-        Accesorio accesorio =
-                new Accesorio(
-                        "ACC001",
-                        "Mouse Inalámbrico",
-                        24990,
-                        "Periférico");
-
-        computador.mostrarInformacion();
+        producto.mostrarInformacion();
 
         System.out.println();
 
-        telefono.mostrarInformacion();
+        producto = new Telefono(
+                "TEL001",
+                "Samsung Galaxy S24",
+                799990,
+                "Android");
+
+        producto.mostrarInformacion();
 
         System.out.println();
 
-        accesorio.mostrarInformacion();
+        producto = new Accesorio(
+                "ACC001",
+                "Mouse Inalámbrico",
+                24990,
+                "Periférico");
+
+        producto.mostrarInformacion();
 
     }
 

@@ -23,6 +23,7 @@ public class Accesorio extends Producto {
 
     }
 
+    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

@@ -22,7 +22,7 @@ public class Telefono extends Producto {
         this.sistemaOperativo = sistemaOperativo;
 
     }
-
+    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

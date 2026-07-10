@@ -25,6 +25,7 @@ public class Computador extends Producto {
 
     }
 
+    @Override
     public void mostrarInformacion() {
 
         super.mostrarInformacion();

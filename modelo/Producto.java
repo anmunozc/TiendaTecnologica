@@ -1,12 +1,12 @@
 /**
-*=========================
-* Clase PADRE
-*=========================
-*/
+ *=========================
+ * Clase PADRE
+ *=========================
+ */
 
 package modelo;
 
-public class Producto {
+public class Producto implements Mostrable {
 
     protected String codigo;
     protected String nombre;
@@ -24,6 +24,7 @@ public class Producto {
         this.precio = precio;
     }
 
+    @Override
     public void mostrarInformacion() {
 
         System.out.println("Código: " + codigo);

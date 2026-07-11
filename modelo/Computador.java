@@ -1,8 +1,9 @@
 /**
-*=========================
-*  Clase HIJA
-*=========================
-*/
+ *=========================
+ * Clase HIJA
+ *=========================
+ */
+
 package modelo;
 
 public class Computador extends Producto {
@@ -23,6 +24,11 @@ public class Computador extends Producto {
         super(codigo, nombre, precio);
         this.procesador = procesador;
 
+    }
+
+    @Override
+    public String obtenerCategoria() {
+        return "Computador";
     }
 
     @Override

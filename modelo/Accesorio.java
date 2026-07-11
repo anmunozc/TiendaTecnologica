@@ -1,8 +1,9 @@
 /**
-*=========================
-* Clase HIJA
-*=========================
-*/
+ *=========================
+ * Clase HIJA
+ *=========================
+ */
+
 package modelo;
 
 public class Accesorio extends Producto {
@@ -21,6 +22,11 @@ public class Accesorio extends Producto {
         super(codigo, nombre, precio);
         this.tipo = tipo;
 
+    }
+
+    @Override
+    public String obtenerCategoria() {
+        return "Accesorio";
     }
 
     @Override

@@ -1,8 +1,9 @@
 /**
-*=========================
-* Clase HIJA
-*=========================
-*/
+ *=========================
+ * Clase HIJA
+ *=========================
+ */
+
 package modelo;
 
 public class Telefono extends Producto {
@@ -22,6 +23,12 @@ public class Telefono extends Producto {
         this.sistemaOperativo = sistemaOperativo;
 
     }
+
+    @Override
+    public String obtenerCategoria() {
+        return "Teléfono";
+    }
+
     @Override
     public void mostrarInformacion() {
 

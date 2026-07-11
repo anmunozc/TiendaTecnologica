@@ -24,9 +24,15 @@ public class Producto implements Mostrable {
         this.precio = precio;
     }
 
+    // Método que puede ser redefinido por las clases hijas
+    public String obtenerCategoria() {
+        return "Producto";
+    }
+
     @Override
     public void mostrarInformacion() {
 
+        System.out.println("Categoría: " + obtenerCategoria());
         System.out.println("Código: " + codigo);
         System.out.println("Nombre: " + nombre);
         System.out.println("Precio: $" + precio);
